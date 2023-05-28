@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<architect-project version="1.0" appversion="1.0.9">
+ <project-name>uvv</project-name>
+ <print-settings numCopies="1" zoom="1.0" pageNumbersPrinted="true" orientation="1" paperWidth="612.0" paperHeight="792.0" leftBorder="50.0" rightBorder="50.0" topBorder="50.0" bottomBorder="50.0" />
+ <project-data-sources>
+  <data-source id="DS0">
+   <property key="Logical" value="PlayPen Database" />
+  </data-source>
+ </project-data-sources>
+ <source-databases>
+ </source-databases>
+ <target-database id="ppdb" dbcs-ref="DS0">
+  <table id="TAB1" populated="true" UUID="9b3951b3-bfa1-4262-a147-9524dfa6775b" name="lojas" objectType="TABLE" physicalName="lojas" >
+   <remarks>Tabela lojas que receberá informações a respeito das lojas parceiras.</remarks>
+   <folder id="FOLTAB11" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL2" populated="true" UUID="8b6d2a9d-4227-4acf-8d8a-9911eeee5ca5" autoIncrement="false" autoIncrementSequenceName="lojas_loja_id_seq" defaultValue="" name="loja_id" nullable="0" physicalName="loja_id" precision="38" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
+     <remarks>Id das lojas parceiras, chave primeira da tabela, recebe apenas números</remarks>
+    </column>
+    <column id="COL3" populated="true" UUID="0fdea33b-6dfc-4a00-a84c-23e9ee24732c" autoIncrement="false" autoIncrementSequenceName="lojas_nome_seq" defaultValue="" name="nome" nullable="0" physicalName="nome" precision="255" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>Nome das lojas parceiras</remarks>
+    </column>
+    <column id="COL4" populated="true" UUID="3993efc4-fbde-48ba-b58f-cc1aea8e2cc4" autoIncrement="false" autoIncrementSequenceName="lojas_endereco_web_seq" defaultValue="" name="endereco_web" nullable="1" physicalName="endereco_web" precision="100" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>Endereço para o site das lojas parceiras</remarks>
+    </column>
+    <column id="COL5" populated="true" UUID="7c44d34a-da0b-4505-ab6f-64e801bea7a2" autoIncrement="false" autoIncrementSequenceName="lojas_endereco_fisico_seq" defaultValue="" name="endereco_fisico" nullable="1" physicalName="endereco_fisico" precision="512" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>Endereço físico das lojas parceiras</remarks>
+    </column>
+    <column id="COL6" populated="true" UUID="8e68d00e-897e-495e-b5be-6f381b08c846" autoIncrement="false" autoIncrementSequenceName="lojas_latitude_seq" defaultValue="" name="latitude" nullable="1" physicalName="latitude" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
+     <remarks>Coordenadas geograficas latitudinais das lojas parceiras</remarks>
+    </column>
+    <column id="COL7" populated="true" UUID="c2831608-2fb4-4641-a015-d442ac28be87" autoIncrement="false" autoIncrementSequenceName="lojas_longitude_seq" defaultValue="" name="longitude" nullable="1" physicalName="longitude" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
+     <remarks>Coordenadas geograficas longitudenais das lojas parceiras</remarks>
+    </column>
+    <column id="COL8" populated="true" UUID="17e06b77-b76c-456b-b1e9-de555cd4be0d" autoIncrement="false" autoIncrementSequenceName="lojas_logo_seq" defaultValue="" name="logo" nullable="1" physicalName="logo" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2004" userDefinedTypeUUID="5c50e616-a448-40e1-abcd-5bfc04dcc607" >
+     <remarks>Logo das lojas parceiras, recebe apenas BLOB</remarks>
+    </column>
+    <column id="COL9" populated="true" UUID="4a4ea591-9e51-4c86-885a-7f94e38c0329" autoIncrement="false" autoIncrementSequenceName="lojas_logo_mime_type_seq" defaultValue="" name="logo_mime_type" nullable="1" physicalName="logo_mime_type" precision="512" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>*N SEI AINDA, COLOCAR DPS*</remarks>
+    </column>
+    <column id="COL10" populated="true" UUID="68f34e50-08b8-4cff-8e82-c22d280e2e2d" autoIncrement="false" autoIncrementSequenceName="lojas_logo_arquivo_seq" defaultValue="" name="logo_arquivo" nullable="1" physicalName="logo_arquivo" precision="512" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>Recebe o logo das lojas parceiras</remarks>
+    </column>
+    <column id="COL11" populated="true" UUID="1e54b09c-844e-41de-99a9-d44fc76d658c" autoIncrement="false" autoIncrementSequenceName="lojas_logo_charset_seq" defaultValue="" name="logo_charset" nullable="1" physicalName="logo_charset" precision="512" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>*N SEI AINDA, COLOCAR DPS*</remarks>
+    </column>
+    <column id="COL12" populated="true" UUID="4a5f2891-417c-47aa-9cb7-73f01bbaa0e0" autoIncrement="false" autoIncrementSequenceName="lojas_logo_ultima_atualizacao_seq" defaultValue="" name="logo_ultima_atualizacao" nullable="1" physicalName="logo_ultima_atualizacao" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="91" userDefinedTypeUUID="ee349be3-6af2-46e1-b305-975f5354b009" >
+     <remarks>Datas da ultima atualizacao das logos das lojas parceiras, recebe apenas data</remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB13" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB12" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB14" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX13" populated="true" UUID="00786d2d-b05f-4756-b137-edc211edd956" clustered="false" name="loja_id" physicalName="loja_id" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC14" populated="true" UUID="c8f73d1c-48eb-4ed5-8421-de114809baa5" ascendingOrDescending="UNSPECIFIED" column-ref="COL2" name="loja_id" physicalName="loja_id" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB15" populated="true" UUID="b781a05e-98d0-4541-ac10-cfcb01342f36" name="produtos" objectType="TABLE" physicalName="produtos" >
+   <remarks>Tabela para registro dos produtos</remarks>
+   <folder id="FOLTAB151" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL16" populated="true" UUID="584ddc51-cf67-4f7e-9d9d-4d519802c37c" autoIncrement="false" autoIncrementSequenceName="produtos_produto_id_seq" defaultValue="" name="produto_id" nullable="0" physicalName="produto_id" precision="38" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
+     <remarks>Id dos produtos, chave primaria da tabela, recebe apenas números</remarks>
+    </column>
+    <column id="COL17" populated="true" UUID="97da856d-2cbf-428b-aaea-bf6446df8ebe" autoIncrement="false" autoIncrementSequenceName="produtos_nome_seq" defaultValue="" name="nome" nullable="0" physicalName="nome" precision="255" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>Nome dos produtos</remarks>
+    </column>
+    <column id="COL18" populated="true" UUID="71216cef-5f34-4f90-b608-8f299ab25037" autoIncrement="false" autoIncrementSequenceName="produtos_preco_unitario_seq" defaultValue="" name="preco_unitario" nullable="1" physicalName="preco_unitario" precision="10" referenceCount="1" scale="2" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
+     <remarks>Preço unitário de cada produto</remarks>
+    </column>
+    <column id="COL19" populated="true" UUID="8af05d89-2956-491d-aac3-8916fb9db5c7" autoIncrement="false" autoIncrementSequenceName="produtos_detalhes_seq" defaultValue="" name="detalhes" nullable="1" physicalName="detalhes" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2004" userDefinedTypeUUID="5c50e616-a448-40e1-abcd-5bfc04dcc607" >
+     <remarks>Detalhes de cada produto, recebe apenas BLOB</remarks>
+    </column>
+    <column id="COL20" populated="true" UUID="e3f91ada-1675-4b25-bdd0-522935efe885" autoIncrement="false" autoIncrementSequenceName="produtos_imagem_seq" defaultValue="" name="imagem" nullable="1" physicalName="imagem" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2004" userDefinedTypeUUID="5c50e616-a448-40e1-abcd-5bfc04dcc607" >
+     <remarks>Imagem de cada produto</remarks>
+    </column>
+    <column id="COL21" populated="true" UUID="4ba1be7d-35a6-4c3d-b415-a281bf55c1ed" autoIncrement="false" autoIncrementSequenceName="produtos_imagem_mime_type_seq" defaultValue="" name="imagem_mime_type" nullable="1" physicalName="imagem_mime_type" precision="512" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>*N SEI AINDA, COLOCAR DPS*</remarks>
+    </column>
+    <column id="COL22" populated="true" UUID="d9274294-b892-41a1-b542-a38f7020e59f" autoIncrement="false" autoIncrementSequenceName="produtos_imagem_arquivo_seq" defaultValue="" name="imagem_arquivo" nullable="1" physicalName="imagem_arquivo" precision="512" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>Recebe o arquivo da imagem do produto</remarks>
+    </column>
+    <column id="COL23" populated="true" UUID="94efcbca-bd2e-4099-b27d-39e7410d01ea" autoIncrement="false" autoIncrementSequenceName="produtos_imagem_charset_seq" defaultValue="" name="imagem_charset" nullable="1" physicalName="imagem_charset" precision="512" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>*N SEI AINDA, COLOCAR DPS*</remarks>
+    </column>
+    <column id="COL24" populated="true" UUID="39e1f1ab-d551-453b-b686-3bb3a228e375" autoIncrement="false" autoIncrementSequenceName="produtos_imagem_ultima_atualizacao_seq" defaultValue="" name="imagem_ultima_atualizacao" nullable="1" physicalName="imagem_ultima_atualizacao" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="91" userDefinedTypeUUID="ee349be3-6af2-46e1-b305-975f5354b009" >
+     <remarks>Data da ultima atualizacao da imagem do produto, recebe apenas data</remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB153" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB152" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB154" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX25" populated="true" UUID="68966d25-1ec5-4435-bbf1-1f420d7f8fc6" clustered="false" name="produto_id" physicalName="produto_id" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC26" populated="true" UUID="22767a4f-5788-42df-bcda-e89090cadccf" ascendingOrDescending="UNSPECIFIED" column-ref="COL16" name="produto_id" physicalName="produto_id" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB27" populated="true" UUID="421e0baf-87fb-4eb6-bbd1-bdc6e984b6bc" name="estoques" objectType="TABLE" physicalName="estoques" >
+   <remarks>Tabela de registro do estoque</remarks>
+   <folder id="FOLTAB271" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL28" populated="true" UUID="5f66bdad-8d14-4087-9599-dafab847766d" autoIncrement="false" autoIncrementSequenceName="estoques_estoque_id_seq" defaultValue="" name="estoque_id" nullable="0" physicalName="estoque_id" precision="38" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
+     <remarks>Id do estoque, chave primaria da tabela, recebe apenas numeros</remarks>
+    </column>
+    <column id="COL29" populated="true" UUID="aa53f0c3-3db9-43b7-af5c-8d4662e7232b" autoIncrement="false" autoIncrementSequenceName="lojas_loja_id_seq_1" defaultValue="" name="loja_id" nullable="0" physicalName="loja_id" precision="38" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
+     <remarks>Id das lojas parceiras, chave estrangeira, recebe apenas números</remarks>
+    </column>
+    <column id="COL30" populated="true" UUID="dcee58b2-7b3d-49d5-ba6a-360d31b1ac6b" autoIncrement="false" autoIncrementSequenceName="produtos_produto_id_seq_1" defaultValue="" name="produto_id" nullable="0" physicalName="produto_id" precision="38" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
+     <remarks>Id dos produtos, chave estrangeira, recebe apenas números</remarks>
+    </column>
+    <column id="COL31" populated="true" UUID="5995736e-1480-4218-81f6-4df6ea434ccd" autoIncrement="false" autoIncrementSequenceName="estoques_quantidade_seq" defaultValue="" name="quantidade" nullable="0" physicalName="quantidade" precision="38" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB273" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB272" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB274" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX32" populated="true" UUID="ddd5a1af-18b2-4a84-8cbe-c6b5727e69ee" clustered="false" name="estoque_id" physicalName="estoque_id" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC33" populated="true" UUID="15901529-4876-4368-9875-e9019d93bbc4" ascendingOrDescending="UNSPECIFIED" column-ref="COL28" name="estoque_id" physicalName="estoque_id" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB34" populated="true" UUID="1866e3de-85fd-4877-b3f6-b2b2a4af2abf" name="clientes" objectType="TABLE" physicalName="clientes" >
+   <remarks>Tabela de registro de clientes</remarks>
+   <folder id="FOLTAB341" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL35" populated="true" UUID="d41820bb-a60b-4cfa-b9f8-599e1941a6a0" autoIncrement="false" autoIncrementSequenceName="clientes_cliente_id_seq" defaultValue="" name="cliente_id" nullable="0" physicalName="cliente_id" precision="38" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
+     <remarks>Id de registro de clientes, chave primaria da tabela, recebe apenas numeros</remarks>
+    </column>
+    <column id="COL36" populated="true" UUID="b64e4661-d515-4a97-8bca-b33f63785d24" autoIncrement="false" autoIncrementSequenceName="clientes_email_seq" defaultValue="" name="email" nullable="0" physicalName="email" precision="255" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>Email de cadastro dos clientes</remarks>
+    </column>
+    <column id="COL37" populated="true" UUID="26817829-8df6-40e9-a70f-72c994ca3fc9" autoIncrement="false" autoIncrementSequenceName="clientes_nome_seq" defaultValue="" name="nome" nullable="0" physicalName="nome" precision="255" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>Nome dos clientes</remarks>
+    </column>
+    <column id="COL38" populated="true" UUID="0f34848c-fc5b-4eaa-a73a-dc0c7f801d62" autoIncrement="false" autoIncrementSequenceName="clientes_telefone1_seq" defaultValue="" name="telefone1" nullable="1" physicalName="telefone1" precision="20" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>Telefone principal dos clientes</remarks>
+    </column>
+    <column id="COL39" populated="true" UUID="14937a78-4b1a-416e-8193-199d066ca9ac" autoIncrement="false" autoIncrementSequenceName="clientes_telefone2_seq" defaultValue="" name="telefone2" nullable="1" physicalName="telefone2" precision="20" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>Telefone secundario dos clientes</remarks>
+    </column>
+    <column id="COL40" populated="true" UUID="1f58ccd9-257f-4331-a448-990424772e9a" autoIncrement="false" autoIncrementSequenceName="clientes_telefone3_seq" defaultValue="" name="telefone3" nullable="1" physicalName="telefone3" precision="20" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>Telefone terciario dos clientes</remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB343" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB342" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB344" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX41" populated="true" UUID="3a489fe8-5887-432a-aa96-704c8fd842f3" clustered="false" name="clientes_id" physicalName="clientes_id" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC42" populated="true" UUID="1b9b69a9-af0a-444e-991b-d9a4d2c2d0be" ascendingOrDescending="UNSPECIFIED" column-ref="COL35" name="cliente_id" physicalName="cliente_id" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB43" populated="true" UUID="86a18f50-676b-42ac-9e32-de31d5c74c6f" name="pedidos" objectType="TABLE" physicalName="pedidos" >
+   <remarks>Tabela de registro dos pedidos</remarks>
+   <folder id="FOLTAB431" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL44" populated="true" UUID="425296f5-827c-4f5a-a911-77590edf833e" autoIncrement="false" autoIncrementSequenceName="pedidos_pedido_id_seq" defaultValue="" name="pedido_id" nullable="0" physicalName="pedido_id" precision="38" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
+     <remarks>Id dos pedidos, chave primaria da tabela, recebe apenas numeros</remarks>
+    </column>
+    <column id="COL45" populated="true" UUID="f2675f76-3578-4b6b-8466-2537dc0af693" autoIncrement="false" autoIncrementSequenceName="pedidos_data_hora_seq" defaultValue="" name="data_hora" nullable="0" physicalName="data_hora" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="93" userDefinedTypeUUID="6497d8de-0e00-40d6-a42e-e2adca83be64" >
+     <remarks>Data e hora da realizacao do pedido, utiliza apenas TIMESTAMP</remarks>
+    </column>
+    <column id="COL46" populated="true" UUID="e32b58ac-7a90-4c12-8ec6-028ab55b8e84" autoIncrement="false" autoIncrementSequenceName="clientes_cliente_id_seq_1" defaultValue="" name="cliente_id" nullable="0" physicalName="cliente_id" precision="38" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
+     <remarks>Id de registro de clientes, chave estrangeira, recebe apenas numeros</remarks>
+    </column>
+    <column id="COL47" populated="true" UUID="3ac37733-c41a-41d5-aacf-52800e1d733b" autoIncrement="false" autoIncrementSequenceName="pedidos_status_seq" defaultValue="" name="status" nullable="0" physicalName="status" precision="15" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>Status atual do pedido</remarks>
+    </column>
+    <column id="COL48" populated="true" UUID="377acf54-4404-4461-ab30-a0887904cdb2" autoIncrement="false" autoIncrementSequenceName="lojas_loja_id_seq_2" defaultValue="" name="loja_id" nullable="0" physicalName="loja_id" precision="38" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
+     <remarks>Id das lojas parceiras, chave estrangeira, recebe apenas números</remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB433" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB432" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB434" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX49" populated="true" UUID="0d851576-b2fe-49ff-af0c-ce6e57a9bc4d" clustered="false" name="pedido_id" physicalName="pedido_id" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC50" populated="true" UUID="bd368a52-f561-4d0c-b889-1ab24acaee41" ascendingOrDescending="UNSPECIFIED" column-ref="COL44" name="pedido_id" physicalName="pedido_id" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB51" populated="true" UUID="2df80419-8993-49d3-9f18-55c1593bb1f7" name="envios" objectType="TABLE" physicalName="envios" >
+   <remarks>Tabela de registro de envios</remarks>
+   <folder id="FOLTAB511" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL52" populated="true" UUID="f84fbe93-38a8-4b61-8845-87a266dc8cf9" autoIncrement="false" autoIncrementSequenceName="envios_envio_id_seq" defaultValue="" name="envio_id" nullable="0" physicalName="envio_id" precision="38" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
+     <remarks>Id dos envios, chave primaria da tabela, recebe apenas numeros</remarks>
+    </column>
+    <column id="COL53" populated="true" UUID="be177c8d-011f-4b48-9da3-b7f727be03f4" autoIncrement="false" autoIncrementSequenceName="lojas_loja_id_seq_3" defaultValue="" name="loja_id" nullable="0" physicalName="loja_id" precision="38" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
+     <remarks>Id das lojas parceiras, chave estrangeira, recebe apenas números</remarks>
+    </column>
+    <column id="COL54" populated="true" UUID="51880633-a394-4136-b6f1-d1bb8abade0c" autoIncrement="false" autoIncrementSequenceName="clientes_cliente_id_seq_2" defaultValue="" name="cliente_id" nullable="0" physicalName="cliente_id" precision="38" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
+     <remarks>Id de registro de clientes, chave estrangeira, recebe apenas numeros</remarks>
+    </column>
+    <column id="COL55" populated="true" UUID="310d8c9d-bd75-41bb-8159-d6208508841c" autoIncrement="false" autoIncrementSequenceName="envios_endereco_entrega_seq" defaultValue="" name="endereco_entrega" nullable="0" physicalName="endereco_entrega" precision="512" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>Registro de endereço para entrega dos pedidos</remarks>
+    </column>
+    <column id="COL56" populated="true" UUID="6f8d15cf-5336-4c73-99d2-0689d7f3b0cf" autoIncrement="false" autoIncrementSequenceName="envios_status_seq" defaultValue="" name="status" nullable="0" physicalName="status" precision="15" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>Status atual do envio dos pedidos</remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB513" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB512" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB514" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX57" populated="true" UUID="4a3bb11a-d113-4c30-9ba9-f6072cc932aa" clustered="false" name="envio_id" physicalName="envio_id" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC58" populated="true" UUID="33e0d2a2-12af-4976-be25-36fff1ee5745" ascendingOrDescending="UNSPECIFIED" column-ref="COL52" name="envio_id" physicalName="envio_id" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB59" populated="true" UUID="b5dd6dfc-8f7a-40a4-8d55-eba0cce87bda" name="pedidos_itens" objectType="TABLE" physicalName="pedidos_itens" >
+   <remarks>Tabela de registro dos itens dos pedidos</remarks>
+   <folder id="FOLTAB591" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL60" populated="true" UUID="644d2fd4-3032-46c2-8031-77046b074156" autoIncrement="false" autoIncrementSequenceName="pedidos_pedido_id_seq_1" defaultValue="" name="pedido_id" nullable="0" physicalName="pedido_id" precision="38" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
+     <remarks>Id dos pedidos, chave primaria da tabela, recebe apenas numeros</remarks>
+    </column>
+    <column id="COL61" populated="true" UUID="c7294765-36e5-4c69-8248-51c457a1ec74" autoIncrement="false" autoIncrementSequenceName="produtos_produto_id_seq_1" defaultValue="" name="produto_id" nullable="0" physicalName="produto_id" precision="38" primaryKeySeq="1" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
+     <remarks>Id dos produtos, chave primaria da tabela, recebe apenas números</remarks>
+    </column>
+    <column id="COL62" populated="true" UUID="73bc0515-6d55-4c34-a1e8-f2bef4c3172e" autoIncrement="false" autoIncrementSequenceName="pedidos_itens_numero_da_linha_seq" defaultValue="" name="numero_da_linha" nullable="0" physicalName="numero_da_linha" precision="38" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
+     <remarks>*N SEI AINDA, COLOCAR DPS*</remarks>
+    </column>
+    <column id="COL63" populated="true" UUID="10b93471-05a5-4a71-9b3f-7f34db61400b" autoIncrement="false" autoIncrementSequenceName="pedidos_itens_preco_unitario_seq" defaultValue="" name="preco_unitario" nullable="0" physicalName="preco_unitario" precision="10" referenceCount="1" scale="2" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
+     <remarks>Preco unitario de cada produto</remarks>
+    </column>
+    <column id="COL64" populated="true" UUID="ed2bbee7-1e8c-462d-b46c-7706aac6e95e" autoIncrement="false" autoIncrementSequenceName="pedidos_itens_quantidade_seq" defaultValue="" name="quantidade" nullable="0" physicalName="quantidade" precision="38" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
+     <remarks>Quantidade de itens dos pedidos</remarks>
+    </column>
+    <column id="COL65" populated="true" UUID="753881b7-a5f5-4ed4-9dfb-6b2f4b46a248" autoIncrement="false" autoIncrementSequenceName="envios_envio_id_seq_1" defaultValue="" name="envio_id" nullable="1" physicalName="envio_id" precision="38" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
+     <remarks>Id dos envios, chave estrangeira, recebe apenas numeros</remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB593" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB592" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB594" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX66" populated="true" UUID="b86cf956-0d3a-4594-8d7e-2f59d276ad51" clustered="false" name="pedido_id/produto_id" physicalName="pedido_id_produto_id" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC67" populated="true" UUID="74b26a47-6697-4740-b18f-1831dd29aa02" ascendingOrDescending="UNSPECIFIED" column-ref="COL60" name="pedido_id" physicalName="pedido_id" />
+     <index-column id="IDC68" populated="true" UUID="6b2c3b3b-d5b2-4a4d-a98c-feca3d1e0460" ascendingOrDescending="UNSPECIFIED" column-ref="COL61" name="produto_id" physicalName="produto_id" />
+    </index>
+   </folder>
+  </table>
+  <relationships>
+   <relationship id="REL69" populated="true" UUID="d4f6bfb6-8c9a-4e9a-b972-b25e29c5d45f" deferrability="7" deleteRule="3" fk-table-ref="TAB27" fkCardinality="7" identifying="false" name="lojas_estoques_fk" physicalName="lojas_estoques_fk" pk-table-ref="TAB1" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP70" populated="true" UUID="15bf93fb-962c-4ba4-8155-d7c9b79a4907" fk-column-ref="COL29" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL2" />
+   </relationship>
+   <relationship id="REL71" populated="true" UUID="810c0a9b-58d0-4486-8dfb-53cd3a6b878b" deferrability="7" deleteRule="3" fk-table-ref="TAB43" fkCardinality="7" identifying="false" name="lojas_pedidos_fk" physicalName="lojas_pedidos_fk" pk-table-ref="TAB1" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP72" populated="true" UUID="4072c322-2172-4b0e-a882-bd6791b8b4cb" fk-column-ref="COL48" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL2" />
+   </relationship>
+   <relationship id="REL73" populated="true" UUID="7e312e1c-314e-49b8-8377-ada51914f13d" deferrability="7" deleteRule="3" fk-table-ref="TAB51" fkCardinality="7" identifying="false" name="lojas_envios_fk" physicalName="lojas_envios_fk" pk-table-ref="TAB1" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP74" populated="true" UUID="1982c75f-8489-4e1c-8b03-08f1f0057b72" fk-column-ref="COL53" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL2" />
+   </relationship>
+   <relationship id="REL75" populated="true" UUID="c98f63e7-b13e-4343-9bc3-9fd6d816420c" deferrability="7" deleteRule="3" fk-table-ref="TAB27" fkCardinality="7" identifying="false" name="produtos_estoques_fk" physicalName="produtos_estoques_fk" pk-table-ref="TAB15" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP76" populated="true" UUID="84351d67-f755-4eb8-9a2c-19a117b2fc7f" fk-column-ref="COL30" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL16" />
+   </relationship>
+   <relationship id="REL77" populated="true" UUID="6aeefa36-7aa2-446a-93c0-671007da3f45" deferrability="7" deleteRule="3" fk-table-ref="TAB59" fkCardinality="7" identifying="true" name="produtos_pedidos_itens_fk" physicalName="produtos_pedidos_itens_fk" pk-table-ref="TAB15" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP78" populated="true" UUID="327dbcb9-f0cb-4b27-9f02-900e2035a7c3" fk-column-ref="COL61" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL16" />
+   </relationship>
+   <relationship id="REL79" populated="true" UUID="49c3c53f-a454-4e20-96cf-f0b45c11c659" deferrability="7" deleteRule="3" fk-table-ref="TAB43" fkCardinality="7" identifying="false" name="clientes_pedidos_fk" physicalName="clientes_pedidos_fk" pk-table-ref="TAB34" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP80" populated="true" UUID="a0b85be5-e2c1-4c0f-a6a8-db71c9f74e4d" fk-column-ref="COL46" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL35" />
+   </relationship>
+   <relationship id="REL81" populated="true" UUID="2b267a30-3f10-4a15-89fb-7b1eb9b62c60" deferrability="7" deleteRule="3" fk-table-ref="TAB51" fkCardinality="7" identifying="false" name="clientes_envios_fk" physicalName="clientes_envios_fk" pk-table-ref="TAB34" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP82" populated="true" UUID="04903a1c-4c00-45da-a192-2c8609d999d3" fk-column-ref="COL54" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL35" />
+   </relationship>
+   <relationship id="REL83" populated="true" UUID="daccd42d-c762-4159-8f7d-c91b891ec687" deferrability="7" deleteRule="3" fk-table-ref="TAB59" fkCardinality="7" identifying="true" name="pedidos_pedidos_itens_fk" physicalName="pedidos_pedidos_itens_fk" pk-table-ref="TAB43" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP84" populated="true" UUID="053e2cae-7a88-4771-b028-263720e7c389" fk-column-ref="COL60" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL44" />
+   </relationship>
+   <relationship id="REL85" populated="true" UUID="32cec7ec-c039-4930-bb75-d42da1ab6c87" deferrability="7" deleteRule="3" fk-table-ref="TAB59" fkCardinality="7" identifying="false" name="envios_pedidos_itens_fk" physicalName="envios_pedidos_itens_fk" pk-table-ref="TAB51" pkCardinality="3" updateRule="3" >
+    <column-mapping id="CMP86" populated="true" UUID="a401f126-2b3f-4a43-838b-cdc6d7bc3353" fk-column-ref="COL65" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL52" />
+   </relationship>
+  </relationships>
+ </target-database>
+ <ddl-generator type="ca.sqlpower.architect.ddl.PostgresDDLGenerator" allow-connection="false" target-schema="lojas"> </ddl-generator>
+ <liquibase-settings useSeparateChangeSets="false" generateId="false" idStart="1"/>
+ <create-kettle-job-settings filePath="" jobName="" schemaName="" kettleJoinType="0" savingToFile="true" />
+ <play-pen zoom="0.9999999999999998" viewportX="0" viewportY="0" relationship-style="rectilinear" names-displayLogicalNames="true" showPrimaryTag="true" showForeignTag="true" showAlternateTag="true" columnVisibility="ALL" relationshipLabelVisibility="true">
+  <table-pane table-ref="TAB1" x="393" y="234" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB15" x="844" y="236" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB27" x="623" y="578" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB34" x="36" y="48" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB43" x="719" y="24" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB51" x="31" y="582" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB59" x="1180" y="606" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-link relationship-ref="REL75" pkConnection="0.1317365269461078" fkConnection="0.6292834890965732" rLineColor="0x2e3436" pkLabelText="" fkLabelText="" orientation="132"/>
+  <table-link relationship-ref="REL69" pkConnection="0.8969072164948454" fkConnection="0.3364485981308411" rLineColor="0x2e3436" pkLabelText="" fkLabelText="" orientation="132"/>
+  <table-link relationship-ref="REL79" pkConnection="0.24074074074074073" fkConnection="0.624113475177305" rLineColor="0x2e3436" pkLabelText="" fkLabelText="" orientation="33"/>
+  <table-link relationship-ref="REL71" pkConnection="0.9656357388316151" fkConnection="0.11146496815286625" rLineColor="0x2e3436" pkLabelText="" fkLabelText="" orientation="72"/>
+  <table-link relationship-ref="REL73" pkConnection="0.09965635738831616" fkConnection="0.6085526315789473" rLineColor="0x2e3436" pkLabelText="" fkLabelText="" orientation="132"/>
+  <table-link relationship-ref="REL81" pkConnection="0.6805111821086262" fkConnection="0.46474358974358976" rLineColor="0x2e3436" pkLabelText="" fkLabelText="" orientation="132"/>
+  <table-link relationship-ref="REL85" pkConnection="0.8723404255319149" fkConnection="0.9135802469135802" rLineColor="0x2e3436" pkLabelText="" fkLabelText="" orientation="33"/>
+  <table-link relationship-ref="REL83" pkConnection="0.24822695035460993" fkConnection="0.8666666666666667" rLineColor="0x2e3436" pkLabelText="" fkLabelText="" orientation="129"/>
+  <table-link relationship-ref="REL77" pkConnection="0.8478260869565217" fkConnection="0.2515151515151515" rLineColor="0x2e3436" pkLabelText="" fkLabelText="" orientation="132"/>
+ </play-pen>
+ <critic-manager>
+  <critic-grouping platformType="Generic" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.PrimaryKeyCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.RelationshipMappingTypeCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.EmptyRelationshipCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.AlphaNumericNameCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.AlphaNumericSequenceNameCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SetDefaultOnColumnWithNoDefaultCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SetNullOnNonNullableColumnCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.DuplicateNameCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="DB2" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.DB2UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="H2" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.H2UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="HSQLDB" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.HSQLDBUnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="MySQL" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.MySQLCommentCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.MySQLReservedWordsCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.MySQLUnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="Oracle" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.OraclePhysicalNameCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.OracleReservedWordsCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.OracleUnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="PostgreSQL" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.PostgreSQLReservedWordsCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="SQL Server" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServerUnsupportedFeaturesCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServerReservedWordsCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="SQL Server 2000" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServer2000UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="SQL Server 2005" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServer2005UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+ </critic-manager>
+ <profiles topNCount="10">
+  </profiles>
+  <olap>
+  </olap>
+  <olap-gui>
+  </olap-gui>
+</architect-project>
